@@ -1,1 +1,275 @@
-Verdant will be released very soon!
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Verdant</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: #0b0b0b;
+      color: #f5f5f5;
+      overflow-x: hidden;
+      position: relative;
+    }
+    #galaxy-bg {
+      position: fixed;
+      top: 0; left: 0; width: 100vw; height: 100vh;
+      z-index: 0;
+      pointer-events: none;
+    }
+    header, main, section, footer {
+      position: relative;
+      z-index: 1;
+    }
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 2rem;
+      background-color: #0e0e0e;
+      border-bottom: 1px solid #1f1f1f;
+    }
+    .logo {
+      font-size: 1.8rem;
+      font-weight: 700;
+      color: #3fd47a;
+      letter-spacing: 1px;
+      display: flex;
+      align-items: center;
+      gap: 0.5em;
+    }
+    .logo img {
+      height: 2.2rem;
+      vertical-align: middle;
+    }
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 1.75rem;
+      margin: 0;
+      padding: 0;
+    }
+    nav a {
+      color: #ddd;
+      text-decoration: none;
+      font-weight: 500;
+      transition: color 0.3s;
+    }
+    nav a:hover {
+      color: #3fd47a;
+    }
+    .main-hero {
+      text-align: center;
+      padding: 7rem 2rem 5rem;
+      min-height: 60vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+    .main-hero .logo-img {
+      width: 90px;
+      margin-bottom: 1.5rem;
+    }
+    .main-hero h1 {
+      font-size: 3.5rem;
+      font-weight: 700;
+      color: #fff;
+      margin-bottom: 0.5rem;
+      letter-spacing: 1px;
+    }
+    .main-hero h1 .dot {
+      color: #3fd47a;
+    }
+    .main-hero p {
+      color: #bbb;
+      font-size: 1.2rem;
+      max-width: 700px;
+      margin: 0 auto 2.2rem;
+    }
+    .main-hero .cta-buttons {
+      display: flex;
+      justify-content: center;
+      gap: 1.2rem;
+      flex-wrap: wrap;
+    }
+    .main-hero .cta-buttons a {
+      padding: 0.9rem 2.1rem;
+      border-radius: 30px;
+      font-weight: 600;
+      text-decoration: none;
+      font-size: 1.1rem;
+      transition: all 0.3s;
+      box-shadow: 0 2px 12px #3fd47a33;
+      border: 2px solid transparent;
+      display: flex;
+      align-items: center;
+      gap: 0.5em;
+    }
+    .main-hero .cta-button.primary {
+      background-color: #3fd47a;
+      color: #18181c;
+    }
+    .main-hero .cta-button.primary:hover {
+      background-color: #26794d;
+    }
+    .main-hero .cta-button.secondary {
+      background-color: transparent;
+      border: 2px solid #3fd47a;
+      color: #3fd47a;
+    }
+    .main-hero .cta-button.secondary:hover {
+      background-color: #3fd47a;
+      color: #18181c;
+    }
+    .feature-card {
+      flex: 1 1 320px;
+      background: #18181c;
+      border-radius: 16px;
+      box-shadow: 0 4px 32px #000a;
+      padding: 2.2rem 1.7rem 1.7rem;
+      min-width: 300px;
+      max-width: 370px;
+      border-left: 4px solid transparent;
+      transition: border-color 0.3s;
+    }
+    .feature-card:hover {
+      border-left: 4px solid #3fd47a;
+    }
+    footer {
+      padding: 2rem;
+      text-align: center;
+      background-color: #0e0e0e;
+      color: #888;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+  <canvas id="galaxy-bg"></canvas>
+  <header>
+    <div class="logo">V</div>
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#premium-features">Features</a></li>
+        <li><a href="#status">Status</a></li>
+        <li><a href="#platforms" class="cta-button primary">Download</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="main-hero" id="home">
+      <h1>getverdant<span class="dot">.</span>xyz</h1>
+      <p>The ultimate freemium tool for your platform — speed, stealth, and simplicity.</p>
+      <div class="cta-buttons">
+        <a href="#platforms" class="cta-button primary">Download Now</a>
+        <a href="https://discord.gg/Y2CxABrvHy" class="cta-button secondary" target="_blank" rel="noopener">Join Discord</a>
+      </div>
+    </section>
+  </main>
+
+  <section id="status" style="display: flex; justify-content: center; align-items: center; min-height: 60vh; background: none; margin-top: 2.5rem; margin-bottom: 2.5rem;">
+    <div style="background: #18181c; border-radius: 18px; box-shadow: 0 4px 32px #000a, 0 0 0 2px #222; padding: 2.5rem 2.5rem 2rem; min-width: 500px; max-width: 600px; width: 100%;">
+      <h2 style="font-size: 2.2rem; font-weight: 700; color: #fff; text-align: center; margin-bottom: 0.5rem;">Service Status</h2>
+      <div style="height: 4px; width: 70px; background: #3fd47a; border-radius: 2px; margin: 0 auto 2.2rem auto;"></div>
+      <div style="background: #19191d; border-radius: 12px; padding: 2rem 1.5rem 1.5rem; box-shadow: 0 2px 12px #0004;">
+        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1.2rem;">
+          <span style="font-size: 1.3rem; font-weight: 600; color: #fff;">Platform Status</span>
+          <span style="font-size: 0.98rem; color: #bbb;">Last updated: 06/22/2025 19:00 EST</span>
+        </div>
+        <div style="border-top: 1px solid #23232a; padding-top: 1.2rem;">
+          <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 1.1rem;">
+            <span style="display: flex; align-items: center; gap: 0.7em; color: #3fd47a; font-size: 1.1rem;"><i class="fa-brands fa-windows"></i> Windows Version</span>
+            <span style="display: flex; align-items: center; gap: 0.5em; color: #ffd600; font-weight: 600; font-size: 1.08rem;"><span style="display:inline-block;width:10px;height:10px;background:#ffd600;border-radius:50%;box-shadow:0 0 8px 2px #ffd60088;"></span>In Development</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="platforms" style="max-width: 900px; margin: 4rem auto 4rem auto; background: #18181c; border-radius: 16px; box-shadow: 0 4px 32px #000a, 0 0 0 2px #3fd47a; padding: 2.5rem 2.5rem 2.5rem;">
+    <h2 style="font-size: 2.2rem; font-weight: 700; color: #fff; margin-bottom: 0.5rem;">Windows Version</h2>
+    <span style="display: inline-block; background: #26794d; color: #3fd47a; font-weight: 600; border-radius: 8px; padding: 0.2em 0.9em; font-size: 0.95rem; margin-bottom: 1.2rem;">UPDATED</span>
+    <p style="color: #bbb; font-size: 1.1rem; margin-bottom: 1.5rem;">Full-feature freemium executor with amazing performance and great support!</p>
+    <ul style="list-style: none; padding: 0; margin: 0 0 2.2rem 0; display: flex; flex-wrap: wrap; gap: 2.5rem; color: #3fd47a; font-size: 1.13rem; justify-content: flex-start;">
+      
+      <li style="display: flex; align-items: center;"><span style="display:inline-flex;align-items:center;justify-content:center;width:1.5em;height:1.5em;margin-right:0.5em;"><svg width='20' height='20' viewBox='0 0 20 20' fill='none' xmlns='http://www.w3.org/2000/svg'><path d='M5 10.5L9 14.5L15 7.5' stroke='#3fd47a' stroke-width='2.2' stroke-linecap='round' stroke-linejoin='round'/></svg></span>78 sUNC</li>
+    </ul>
+    <a href="https://getverdant.xyz/Verdant.zip" style="display: inline-block; background: linear-gradient(90deg, #3fd47a 60%, #26794d 100%); color: #18181c; font-weight: 700; font-size: 1.1rem; border-radius: 30px; padding: 0.9em 2.2em; text-decoration: none; box-shadow: 0 2px 12px #3fd47a33; transition: background 0.2s;">Download for Windows <i class="fa fa-download" style="margin-left: 0.5em;"></i></a>
+  </section>
+
+  <section id="premium-features" style="max-width: 1200px; margin: 0 auto 4.5rem auto;">
+    <h2 style="text-align: center; font-size: 2.7rem; font-weight: 700; color: #fff; margin-bottom: 0.3rem;">Freemium Features</h2>
+    <div style="height: 4px; width: 80px; background: #3fd47a; border-radius: 2px; margin: 0 auto 2.5rem auto;"></div>
+    <div style="display: flex; justify-content: center; gap: 2.5rem; flex-wrap: wrap;">
+      <div class="feature-card" style="text-align: center; min-width: 340px; max-width: 400px;">
+        <div style="font-size: 2.2rem; color: #3fd47a; margin-bottom: 1.2rem;"><i class="fa-solid fa-bolt"></i></div>
+        <h3 style="font-size: 1.6rem; font-weight: 700; color: #fff; margin-bottom: 0.7rem;">Lightning Fast</h3>
+        <p style="color: #bbb; font-size: 1.13rem;">Optimized performance across all platforms good resource management.</p>
+      </div>
+      <div class="feature-card" style="text-align: center; min-width: 340px; max-width: 400px;">
+        <div style="margin-bottom: 1.2rem;"><span style="font-family: monospace; font-size: 2.2rem; font-weight: 700; color: #3fd47a;">&lt;/&gt;</span></div>
+        <h3 style="font-size: 1.6rem; font-weight: 700; color: #fff; margin-bottom: 0.7rem;">UNC Compatibility</h3>
+        <p style="color: #bbb; font-size: 1.13rem;">90% UNC means verdant is capable of running most scripts.</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    &copy; 2025 Verdant. All rights reserved.
+  </footer>
+<script>
+// Galaxy/star background animation
+const canvas = document.getElementById('galaxy-bg');
+const ctx = canvas.getContext('2d');
+let stars = [];
+const STAR_COUNT = 120;
+function resize() {
+  canvas.width = window.innerWidth;
+  canvas.height = window.innerHeight;
+}
+window.addEventListener('resize', resize);
+resize();
+function randomStar() {
+  return {
+    x: Math.random() * canvas.width,
+    y: Math.random() * canvas.height,
+    r: Math.random() * 1.2 + 0.3,
+    o: Math.random() * 0.5 + 0.5,
+    d: Math.random() * 0.5 + 0.5,
+    tw: Math.random() * Math.PI * 2
+  };
+}
+function createStars() {
+  stars = [];
+  for (let i = 0; i < STAR_COUNT; i++) {
+    stars.push(randomStar());
+  }
+}
+createStars();
+function animate() {
+  ctx.clearRect(0, 0, canvas.width, canvas.height);
+  for (let s of stars) {
+    s.tw += 0.02 * s.d;
+    ctx.globalAlpha = s.o * (0.7 + 0.3 * Math.sin(s.tw));
+    ctx.beginPath();
+    ctx.arc(s.x, s.y, s.r, 0, Math.PI * 2);
+    ctx.fillStyle = '#fff';
+    ctx.shadowColor = '#fff';
+    ctx.shadowBlur = 8;
+    ctx.fill();
+    ctx.shadowBlur = 0;
+  }
+  ctx.globalAlpha = 1;
+  requestAnimationFrame(animate);
+}
+animate();
+</script>
+</body>
+</html>
